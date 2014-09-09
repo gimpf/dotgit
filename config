@@ -1,0 +1,11 @@
+[include]
+	path = config-user-local
+[merge]
+	tool = kdiff3
+[alias]
+	ci = commit
+	st = status --short
+	co = checkout
+	lg = log --oneline --graph --decorate
+[push]
+	default = simple
