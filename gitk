@@ -1,6 +1,6 @@
-set mainfont {Helvetica 9}
-set textfont {Courier 9}
-set uifont {Helvetica 9 bold}
+set mainfont {Calibri 10}
+set textfont {Consolas 9}
+set uifont {Calibri 10 bold}
 set tabstop 8
 set findmergefiles 0
 set maxgraphpct 50
@@ -50,12 +50,12 @@ set indexcirclecolor green
 set circlecolors {white blue gray blue blue}
 set linkfgcolor blue
 set circleoutlinecolor SystemWindowText
-set geometry(main) 1920x1127+104+104
+set geometry(main) 1920x1127+0+14
 set geometry(state) zoomed
 set geometry(topwidth) 1920
-set geometry(topheight) 225
-set geometry(pwsash0) "649 1"
-set geometry(pwsash1) "974 1"
-set geometry(botwidth) 808
-set geometry(botheight) 897
+set geometry(topheight) 450
+set geometry(pwsash0) "1075 1"
+set geometry(pwsash1) "1708 1"
+set geometry(botwidth) 1181
+set geometry(botheight) 672
 set permviews {}
