@@ -6,11 +6,12 @@
     summary = true
     tool = kdiff3
 [alias]
-    lg = log --color --pretty=myshort --graph
-    ls = log --color --pretty=myshort
-    ll = log --color --pretty=mylong --shortstat
-    lc = log --color --pretty=mylong --stat
-    ld = log --color --pretty=mylong --patch --word-diff
+    lg = log --color --pretty=fshort --graph
+    ls = log --color --pretty=fshort
+    lsd = log --color --pretty=fshortd
+    ll = log --color --pretty=flong --shortstat
+    lc = log --color --pretty=flong --stat
+    ld = log --color --pretty=flong --patch --word-diff
     pa = !"if branch=$(git symbolic-ref --short -q HEAD); then for b in $(git for-each-ref refs/heads --format='%(refname)') ; do git checkout ${b#refs/heads/} ; git pull --ff-only; done; git checkout $branch; else echo Error: command forbidden when using a detached head; fi"
     co = checkout
     ci = commit
@@ -29,6 +30,6 @@
     fontdiff = -family Consolas -size 10 -weight normal -slant roman -underline 0 -overstrike 0
     warndetachedcommit = true
 [pretty]
-    myshort = tformat:%Cred%h%Creset%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset
-    mylong = tformat:%n%n%Cred%H%Creset%C(yellow)%d%C(bold white) %s%n%Creset   Author: %Cgreen(%ai) %C(bold blue)%an <%ae>%Creset%nCommitter: %Cgreen(%ci) %C(bold blue)%an <%ae>%Creset%n  Parents: %C(cyan)%P%Creset%n%-N%w(0,4,4)%n%n%-b
-
+    fshort = tformat:%C(red)%h%Creset%C(yellow)%d%Creset %s %C(green)(%cr) %C(bold blue)<%aN>%Creset
+    fshortd = tformat:%m %C(red)%h%Creset%C(yellow)%d%Creset %s %C(green)(%cr) %C(bold blue)<%aN>%Creset
+    flong = tformat:%n%n%C(red)%H%Creset%m%C(bold white)% s%C(yellow nobold)%d%Creset%n   Author: %C(bold blue)%an <%ae>%C(green nobold) %ai%Creset%nCommitter: %C(bold blue)%cn <%ce>%C(green nobold) %ci%Creset%n  Parents: %C(cyan)%P%Creset%n%-N%w(0,4,4)%n%n%-b
