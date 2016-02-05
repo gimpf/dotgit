@@ -18,7 +18,7 @@
     df = difftool --dir-diff
     nuke = clean -d -x
 [push]
-	default = simple
+    default = simple
 [core]
     autocrlf = false
     ; autocrlf = input
