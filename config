@@ -1,14 +1,16 @@
 [include]
     path = config-user-local
+[diff]
+    algorithm = patience
 [merge]
     summary = true
     tool = kdiff3
 [alias]
-    lg = log --color --graph --pretty=myshort --patience
-    ls = log --color --pretty=myshort --patience
-    ll = log --color --pretty=mylong --patience --shortstat
-    lc = log --color --pretty=mylong --patience --stat
-    ld = log --color --pretty=mylong --patience --patch --word-diff
+    lg = log --color --pretty=myshort --graph
+    ls = log --color --pretty=myshort
+    ll = log --color --pretty=mylong --shortstat
+    lc = log --color --pretty=mylong --stat
+    ld = log --color --pretty=mylong --patch --word-diff
     pa = !"if branch=$(git symbolic-ref --short -q HEAD); then for b in $(git for-each-ref refs/heads --format='%(refname)') ; do git checkout ${b#refs/heads/} ; git pull --ff-only; done; git checkout $branch; else echo Error: command forbidden when using a detached head; fi"
     co = checkout
     ci = commit
