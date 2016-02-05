@@ -16,6 +16,7 @@
     ci = commit
     st = status --short
     df = difftool --dir-diff
+    nuke = clean -d -x
 [push]
 	default = simple
 [core]
