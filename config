@@ -33,3 +33,7 @@
     fshort = tformat:%C(red)%h%Creset%C(yellow)%d%Creset %s %C(green)(%cr) %C(bold blue)<%aN>%Creset
     fshortd = tformat:%m %C(red)%h%Creset%C(yellow)%d%Creset %s %C(green)(%cr) %C(bold blue)<%aN>%Creset
     flong = tformat:%n%n%C(red)%H%Creset%m%C(bold white)% s%C(yellow nobold)%d%Creset%n   Author: %C(bold blue)%an <%ae>%C(green nobold) %ai%Creset%nCommitter: %C(bold blue)%cn <%ce>%C(green nobold) %ci%Creset%n  Parents: %C(cyan)%P%Creset%n%-N%w(0,4,4)%n%n%-b
+[rebase]
+	autosquash = true
+[pull]
+	ff = only
