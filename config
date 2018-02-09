@@ -26,8 +26,8 @@
     ; safecrlf = true
 [gui]
     encoding = utf-8
-    fontui = -family Calibri -size 10 -weight normal -slant roman -underline 0 -overstrike 0
-    fontdiff = -family Consolas -size 10 -weight normal -slant roman -underline 0 -overstrike 0
+	fontui = -family Ubuntu -size 14 -weight normal -slant roman -underline 0 -overstrike 0
+	fontdiff = -family \"Ubuntu Mono\" -size 14 -weight normal -slant roman -underline 0 -overstrike 0
     warndetachedcommit = true
 [pretty]
     fshort = tformat:%C(red)%h%Creset%C(yellow)%d%Creset %s %C(green)(%cr) %C(bold blue)<%aN>%Creset
