@@ -15,7 +15,7 @@
     pa = !"if branch=$(git symbolic-ref --short -q HEAD); then for b in $(git for-each-ref refs/heads --format='%(refname)') ; do git checkout ${b#refs/heads/} ; git pull --ff-only; done; git checkout $branch; else echo Error: command forbidden when using a detached head; fi"
     co = checkout
     ci = commit
-    st = status --short
+    st = status --short --branch
     df = difftool --dir-diff
     nuke = clean -d -x
 [push]
